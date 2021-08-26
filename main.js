@@ -224,10 +224,19 @@ let validInput = function () {
     let inputID = document.getElementById("securitynum").valueOf()
     inputID.value = ""
     inputID.onkeydown = function (e) {
-        if (isNaN(parseInt(String.fromCharCode(e.which))) && e.which !== 8 && e.which !== 37 && e.which !== 39) {
-            e.preventDefault()
+        // alert(e.which)
+        if (isNaN(parseInt(String.fromCharCode(e.which))) && e.which !== 8 && e.which !== 37 && e.which !== 39 ) {
+            if(!(e.which >= 96 && e.which<=105) || inputID.value.length === 4){
+                // alert(e.which)
+                e.preventDefault()
+            }
+            
+           
+            
         } else {
-            if (inputID.value.length === 4 && e.which !== 8 && e.which !== 37 && e.which !== 39) {
+            
+            if (inputID.value.length === 4 && e.which !== 8 && e.which !== 37 && e.which !== 39 ) {
+                
                 e.preventDefault()
             }
         }
