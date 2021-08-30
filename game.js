@@ -93,7 +93,7 @@ let acceptBtn = function () {
 
 let makeRandom = function () {
     randomNumber = Math.floor(Math.random() * 90000 + 10000).toString()
-    console.log(randomNumber)
+//    console.log(randomNumber)
 }
 // let changeColorborder = function () {
 //     let colors = ["rgba(128,1,1,0.91)", "rgba(255,242,0,0.91)", "rgba(39,255,0,0.91)", "rgba(16,0,228,0.91)"]
